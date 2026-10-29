@@ -24,7 +24,7 @@
         <div class="field">
             <label for="email">Email</label>
             <input type="email" id="email" name="email" value="{{ old('email') }}"
-                   placeholder="nama@email.com" autocomplete="email"
+                   placeholder="Masukkan email" autocomplete="email"
                    class="@error('email') is-invalid @enderror">
             @error('email')
                 <span class="field__error">{{ $message }}</span>
@@ -34,7 +34,7 @@
         <div class="field">
             <label for="phone">Nomor Telepon</label>
             <input type="tel" id="phone" name="phone" value="{{ old('phone') }}"
-                   placeholder="081234567890" autocomplete="tel" inputmode="tel"
+                   placeholder="Masukkan No Telepon" autocomplete="tel" inputmode="tel"
                    class="@error('phone') is-invalid @enderror">
             @error('phone')
                 <span class="field__error">{{ $message }}</span>
